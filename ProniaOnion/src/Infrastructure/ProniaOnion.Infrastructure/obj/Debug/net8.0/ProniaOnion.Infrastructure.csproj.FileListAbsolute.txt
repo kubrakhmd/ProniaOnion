@@ -1,0 +1,24 @@
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.deps.json
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.dll
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.pdb
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.AssemblyInfo.cs
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.dll
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\refint\ProniaOnion.Infrastructure.dll
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.pdb
+C:\Users\sabir\OneDrive\Рабочий стол\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ref\ProniaOnion.Infrastructure.dll
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.deps.json
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.dll
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\bin\Debug\net8.0\ProniaOnion.Infrastructure.pdb
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.AssemblyInfo.cs
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.sourcelink.json
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.dll
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\refint\ProniaOnion.Infrastructure.dll
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ProniaOnion.Infrastructure.pdb
+C:\Users\Kubra\OneDrive\Desktop\ProniaOnion1\ProniaOnion\src\Infrastructure\ProniaOnion.Infrastructure\obj\Debug\net8.0\ref\ProniaOnion.Infrastructure.dll
