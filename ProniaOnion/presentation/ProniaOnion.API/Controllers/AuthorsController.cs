@@ -31,7 +31,7 @@ namespace ProniaOnion.API.Controllers
             public async Task<IActionResult> Get(int id)
             {
                 if (id < 1) return BadRequest();
-                var authorDto = await _service.GetbyIdAsync(id);
+                var authorDto = await _service.GetByIdAsync(id);
                 if (authorDto == null) return NotFound();
 
                 return Ok(authorDto);

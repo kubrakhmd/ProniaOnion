@@ -33,7 +33,7 @@ namespace ProniaAPI.Controllers
         public async Task<IActionResult> Get(int Id)
         {
             if (Id < 1) return BadRequest();
-            var genreDto = await _service.GetbyIdAsync(Id);
+            var genreDto = await _service.GetByIdAsync(Id);
             if (genreDto == null) return NotFound();
             return Ok(genreDto);
         }

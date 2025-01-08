@@ -200,9 +200,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.ColorController",
+    "ContainingType": "ProniaOnion.API.Controllers.ColorsController",
     "Method": "Get",
-    "RelativePath": "api/Color",
+    "RelativePath": "api/Colors",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -221,9 +221,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.ColorController",
+    "ContainingType": "ProniaOnion.API.Controllers.ColorsController",
     "Method": "Create",
-    "RelativePath": "api/Color",
+    "RelativePath": "api/Colors",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -237,9 +237,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.ColorController",
+    "ContainingType": "ProniaOnion.API.Controllers.ColorsController",
     "Method": "Get",
-    "RelativePath": "api/Color/{id}",
+    "RelativePath": "api/Colors/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -253,9 +253,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.ColorController",
+    "ContainingType": "ProniaOnion.API.Controllers.ColorsController",
     "Method": "Delete",
-    "RelativePath": "api/Color/{id}",
+    "RelativePath": "api/Colors/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -269,9 +269,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.ColorController",
+    "ContainingType": "ProniaOnion.API.Controllers.ColorsController",
     "Method": "Update",
-    "RelativePath": "api/Color/{id}",
+    "RelativePath": "api/Colors/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -380,9 +380,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.SizeController",
+    "ContainingType": "ProniaOnion.API.Controllers.ProductsController",
     "Method": "Get",
-    "RelativePath": "api/Size",
+    "RelativePath": "api/Products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -401,9 +401,46 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.SizeController",
+    "ContainingType": "ProniaOnion.API.Controllers.ProductsController",
+    "Method": "Get",
+    "RelativePath": "api/Products/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProniaOnion.API.Controllers.SizesController",
+    "Method": "Get",
+    "RelativePath": "api/Sizes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProniaOnion.API.Controllers.SizesController",
     "Method": "Create",
-    "RelativePath": "api/Size",
+    "RelativePath": "api/Sizes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -417,9 +454,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.SizeController",
+    "ContainingType": "ProniaOnion.API.Controllers.SizesController",
     "Method": "Get",
-    "RelativePath": "api/Size/{id}",
+    "RelativePath": "api/Sizes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -433,9 +470,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.SizeController",
+    "ContainingType": "ProniaOnion.API.Controllers.SizesController",
     "Method": "Delete",
-    "RelativePath": "api/Size/{id}",
+    "RelativePath": "api/Sizes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -449,9 +486,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.SizeController",
+    "ContainingType": "ProniaOnion.API.Controllers.SizesController",
     "Method": "Update",
-    "RelativePath": "api/Size/{id}",
+    "RelativePath": "api/Sizes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -470,9 +507,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.TagController",
+    "ContainingType": "ProniaOnion.API.Controllers.TagsController",
     "Method": "Get",
-    "RelativePath": "api/Tag",
+    "RelativePath": "api/Tags",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -491,9 +528,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.TagController",
+    "ContainingType": "ProniaOnion.API.Controllers.TagsController",
     "Method": "Create",
-    "RelativePath": "api/Tag",
+    "RelativePath": "api/Tags",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -507,9 +544,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.TagController",
+    "ContainingType": "ProniaOnion.API.Controllers.TagsController",
     "Method": "Get",
-    "RelativePath": "api/Tag/{id}",
+    "RelativePath": "api/Tags/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -523,9 +560,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.TagController",
+    "ContainingType": "ProniaOnion.API.Controllers.TagsController",
     "Method": "Delete",
-    "RelativePath": "api/Tag/{id}",
+    "RelativePath": "api/Tags/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -539,9 +576,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProniaOnion.API.Controllers.TagController",
+    "ContainingType": "ProniaOnion.API.Controllers.TagsController",
     "Method": "Update",
-    "RelativePath": "api/Tag/{id}",
+    "RelativePath": "api/Tags/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

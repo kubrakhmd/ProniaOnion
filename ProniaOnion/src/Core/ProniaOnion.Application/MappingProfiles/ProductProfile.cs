@@ -13,7 +13,22 @@ namespace ProniaOnion.Application.MappingProfiles
     {
         public ProductProfile()
         {
-            CreateMap<Product,ProductItemDto>().ReverseMap();
+            CreateMap<Product, ProductItemDto>();
+            CreateMap<Product, GetProductDto>()
+                .ForCtorParam(nameof(GetProductDto.Colors),
+                opt => opt.MapFrom(
+                    p => p.ProductColors.Select(pc => new ColorItemDto(pc.ColorId, pc.Color.Name)).ToList())
+                ).ForCtorParam(nameof(GetProductDto.Sizes),
+               opt => opt.MapFrom(
+                   p => p.ProductSizes.Select(pc => new SizeItemDto(pc.SizeId, pc.Size.Name)).ToList())
+               )
+                .ForCtorParam(nameof(GetProductDto.Tags),
+               opt => opt.MapFrom(
+                   p => p.ProductTags.Select(pc => new TagItemDto(pc.TagId, pc.Tag.Name)).ToList())
+               )
+               ;
+
+
         }
     }
 }

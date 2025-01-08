@@ -1,23 +1,23 @@
-﻿using FluentValidation;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ProniaOnion.Application;
 using ProniaOnion.Application.Abstractions.Services;
+using ProniaOnion.Application.DTOs;
+using ProniaOnion.Application;
+using FluentValidation;
 
 namespace ProniaOnion.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SizeController : ControllerBase
+    public class ColorsController : ControllerBase
     {
-        private readonly ISizeService _service;
-        private readonly IValidator<CreateSizeDto> _validator;
-        public SizeController(ISizeService service, IValidator<CreateSizeDto> validator)
+        private readonly IColorService _service;
+        private readonly IValidator<CreateColorDto> _validator;
+        public ColorsController(IColorService service, IValidator<CreateColorDto> validator)
         {
-            _validator = validator;
+            _validator=validator;
             _service = service;
         }
-
 
         [HttpGet]
         public async Task<IActionResult> Get(int page = 1, int take = 3)
@@ -29,15 +29,15 @@ namespace ProniaOnion.API.Controllers
         public async Task<IActionResult> Get(int id)
         {
             if (id < 1) return BadRequest();
-            var sizeDto = await _service.GetByIdAsync(id);
-            if (sizeDto == null) return NotFound();
-            return StatusCode(StatusCodes.Status200OK, sizeDto);
+            var colorDto = await _service.GetByIdAsync(id);
+            if (colorDto == null) return NotFound();
+            return StatusCode(StatusCodes.Status200OK, colorDto);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] CreateSizeDto sizeDto)
+        public async Task<IActionResult> Create([FromForm] CreateColorDto colorDto)
         {
-            await _service.CreateAsync(sizeDto);
+            await _service.CreateAsync(colorDto);
 
             return StatusCode(StatusCodes.Status201Created);
 
@@ -54,11 +54,11 @@ namespace ProniaOnion.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromForm] UpdateSizeDto sizeDto)
+        public async Task<IActionResult> Update(int id, [FromForm] UpdateColorDto colorDto)
         {
             if (id < 1) return BadRequest();
 
-            await _service.UpdateAsync(id, sizeDto);
+            await _service.UpdateAsync(id, colorDto);
 
             return NoContent();
         }

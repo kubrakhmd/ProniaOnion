@@ -34,7 +34,7 @@ namespace ProniaOnion.Persistence.Implementations.Services
             return _mapper.Map<IEnumerable<BlogItemDto>>(blogs);
         }
 
-        public async Task<GetBlogDto> GetbyIdAsync(int id)
+        public async Task<GetBlogDto> GetByIdAsync(int id)
         {
             Blog blog = await _repository.GetByIdAsync(id,nameof(Blog.Author),nameof(Blog.Genre));
             if (blog == null) throw new Exception("Not Found");

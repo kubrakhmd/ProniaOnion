@@ -8,11 +8,11 @@ namespace ProniaOnion.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TagController : ControllerBase
+    public class TagsController : ControllerBase
     {
         private readonly ITagService _service;
         private readonly IValidator<CreateTagDto> _validator;
-        public TagController(ITagService service, IValidator<CreateTagDto> validator)
+        public TagsController(ITagService service, IValidator<CreateTagDto> validator)
         {
             _validator = validator;
             _service = service;

@@ -31,7 +31,7 @@ namespace ProniaAPI.Controllers
         public async Task<IActionResult> Get(int Id)
         {
             if (Id < 1) return BadRequest();
-            var blogDto = await _service.GetbyIdAsync(Id);
+            var blogDto = await _service.GetByIdAsync(Id);
             if (blogDto == null) return NotFound();
             return Ok(blogDto);
         }
