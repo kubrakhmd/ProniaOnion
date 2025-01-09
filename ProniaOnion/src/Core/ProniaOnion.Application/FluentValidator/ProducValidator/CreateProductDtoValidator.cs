@@ -11,7 +11,7 @@ namespace ProniaOnion.Application.FluentValidator.ProducValidator
     public class CreateProductDtoValidator : AbstractValidator<CreateProductDto>
     { 
         public const int NAME_MAX_LENGTH=100;
-        public const int SKU_MAX_LENGTH = 100;
+        public const int SKU_MAX_LENGTH = 10;
         public const int SKU_MIN_LENGTH = 4;
         public const decimal PRICE_MAX =9999.99m;
         public const decimal PRICE_MIN = 3;

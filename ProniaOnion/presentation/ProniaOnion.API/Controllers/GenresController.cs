@@ -28,12 +28,12 @@ namespace ProniaAPI.Controllers
             return Ok(await _service.GetAllAsync(page, take));
         }
 
-        [HttpGet("{Id}")]
+        [HttpGet("{id}")]
 
-        public async Task<IActionResult> Get(int Id)
+        public async Task<IActionResult> Get(int id)
         {
-            if (Id < 1) return BadRequest();
-            var genreDto = await _service.GetByIdAsync(Id);
+            if (id < 1) return BadRequest();
+            GetGenreDto genreDto = await _service.GetByIdAsync(id);
             if (genreDto == null) return NotFound();
             return Ok(genreDto);
         }
@@ -45,19 +45,19 @@ namespace ProniaAPI.Controllers
             return NoContent();
         }
 
-        [HttpPut("{Id}")]
-        public async Task<IActionResult> Update(int Id, [FromForm] UpdateGenreDto genreDto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromForm] UpdateGenreDto genreDto)
         {
-            if (Id < 1) return BadRequest();
-            await _service.UpdateAsync(Id, genreDto);
+            if (id < 1) return BadRequest();
+            await _service.UpdateAsync(id, genreDto);
             return NoContent();
         }
 
         [HttpDelete("{Id}")]
-        public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (Id < 1) return BadRequest();
-            await _service.DeleteAsync(Id);
+            if (id < 1) return BadRequest();
+            await _service.DeleteAsync(id);
             return NoContent();
         }
     }

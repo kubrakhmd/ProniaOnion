@@ -8,7 +8,7 @@ namespace ProniaOnion.Application.DTOs.Products
 {
     public record GetProductDto(int Id, string Name, decimal Price, CategoryItemDto Category,
       string SKU, string Decription,
-          IEnumerable<TagItemDto> Tags,
+   IEnumerable<TagItemDto> Tags,
    IEnumerable<SizeItemDto> Sizes,
    IEnumerable<ColorItemDto> Colors
  );

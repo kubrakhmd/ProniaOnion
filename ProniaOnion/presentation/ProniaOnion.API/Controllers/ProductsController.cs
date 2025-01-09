@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProniaOnion.Application.Abstractions.Services;
+using ProniaOnion.Application.DTOs.Products;
 
 namespace ProniaOnion.API.Controllers
 {
@@ -8,26 +9,45 @@ namespace ProniaOnion.API.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-       
-            private readonly IProductService _service;
-            public ProductsController(IProductService service)
-            {
-                _service = service;
-            }
-            [HttpGet]
-            public async Task<IActionResult> Get(int page = 1, int take = 3)
-            {
-                return Ok(await _service.GetAll(page, take));
-            }
-            [HttpGet("{Id}")]
-            public async Task<IActionResult> Get(int Id)
-            {
-                if (Id < 1) return BadRequest();
-                var productdto = await _service.GetByIdAsync(Id);
-                if (productdto == null) return NotFound();
-                return Ok(productdto);
-            }
+
+        private readonly IProductService _service;
+        public ProductsController(IProductService service)
+        {
+            _service = service;
+        }
+        [HttpGet]
+        public async Task<IActionResult> Get(int page = 1, int take = 3)
+        {
+            return Ok(await _service.GetAll(page, take));
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            if (id < 1) return BadRequest();
+            GetProductDto productdto = await _service.GetByIdAsync(id);
+            if (productdto == null) return NotFound();
+            return Ok(productdto);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromForm] CreateProductDto productDto)
+        {
+            await _service.CreateAsync(productDto);
+            return StatusCode(StatusCodes.Status201Created);
+        }
+
+
+
+        [HttpPut]
+        public async Task<IActionResult> Update(int id, UpdateProductDto productDto)
+        {
+            if (id < 1) return BadRequest();
+            await _service.UpdateAsync(id, productDto);
+
+            return NoContent();
         }
     }
+}
 
 
